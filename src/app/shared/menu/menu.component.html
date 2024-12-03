@@ -1,0 +1,44 @@
+<nav>
+  <ul>
+    <li class="dropdown" appHoverDropdown>
+      <a href="javascript:void(0)" class="dropbtn"
+        >Catálogos<i class="fa fa-caret-down"></i
+      ></a>
+      <div class="dropdown-content">
+        <li class="dropdown" appHoverDropdown>
+          <a href="javascript:void(0)" class="dropbtn"
+            >Clientes <i class="fa fa-caret-right"></i
+          ></a>
+          <div class="dropdown-content right">
+            <a routerLink="/clients">Catálogos de Claves</a>
+          </div>
+        </li>
+      </div>
+    </li>
+    <li class="dropdown" appHoverDropdown>
+      <a href="javascript:void(0)" class="dropbtn"
+        >Movimientos<i class="fa fa-caret-down"></i
+      ></a>
+      <div class="dropdown-content">
+        <li class="dropdown" appHoverDropdown>
+          <a href="javascript:void(0)" class="dropbtn"
+            >Envios<i class="fa fa-caret-right"></i
+          ></a>
+          <div class="dropdown-content right">
+            <a routerLink="/shipments">Incidentes de Daño</a>
+            <a routerLink="/shipments/create">Incidentes Embarque</a>
+          </div>
+        </li>
+
+        <li class="dropdown" appHoverDropdown>
+          <a href="javascript:void(0)" class="dropbtn"
+            >Cotizador <i class="fa fa-caret-right"></i
+          ></a>
+          <div class="dropdown-content right">
+            <a routerLink="/deliveries">Paquetería</a>
+          </div>
+        </li>
+      </div>
+    </li>
+  </ul>
+</nav>

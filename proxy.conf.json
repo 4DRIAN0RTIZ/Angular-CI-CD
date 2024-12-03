@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://erp.en-trega.com:9018",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
