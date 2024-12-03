@@ -1,0 +1,36 @@
+name: Angular CI
+
+# Triggers for the workflow
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run tests
+      - name: Run tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless
+
+      # Step 5: Build the project
+      - name: Build application
+        run: npm run build -- --configuration=production
