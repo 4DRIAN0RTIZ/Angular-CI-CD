@@ -7,6 +7,7 @@ import { HoverDropdownDirective } from '../../directives/app-hover-dropdown.dire
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
+  standalone: true,
   imports: [HoverDropdownDirective],
 })
 export class MenuComponent {
