@@ -37,11 +37,9 @@ export class PrincipalComponent implements OnInit {
         .subscribe(
           (response) => {
             console.log('Sesión válida:', response);
-            // Puedes manejar el response si necesitas algo más
           },
           (error) => {
             console.error('Error al validar la sesión:', error);
-            // Si la sesión no es válida, redirigir al login
             this.logout();
           }
         );
